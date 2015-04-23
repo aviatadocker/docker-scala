@@ -4,7 +4,7 @@
 # Docker Hub - http://hub.docker.com/u/dalekurt/scala
 # Twitter - http://www.twitter.com/dalekurt
 
-FROM aviatadocker/java7
+FROM aviata/java7
 
 MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 
