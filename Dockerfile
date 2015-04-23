@@ -4,9 +4,9 @@
 # Docker Hub - http://hub.docker.com/u/dalekurt/scala
 # Twitter - http://www.twitter.com/dalekurt
 
-FROM dalekurt/java7
+FROM aviatadocker/java7
 
-MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
+MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 
 ENV SCALA_VERSION 2.11.6
 ENV SBT_VERSION 0.13.8
