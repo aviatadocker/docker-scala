@@ -45,7 +45,7 @@ MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 #RUN sudo apt-get update
 #RUN sudo apt-get install sbt
 
-RUN wget https://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
+RUN wget https://dl.bintray.com/sbt/debian/sbt-0.13.8.deb
 RUN sudo dpkg -i sbt-0.13.7.deb
 
 EXPOSE 9000
