@@ -60,3 +60,4 @@ EXPOSE 9999
 #WORKDIR /opt/app/mystuff-play-scala-webapp
 #ENTRYPOINT ["sbt"]
 #CMD ["run"]
+CMD ["bash"]
