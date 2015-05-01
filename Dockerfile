@@ -40,10 +40,13 @@ MAINTAINER jmarsh.ext "jmarsh.ext@aviatainc.com"
 #    ./test-sbt.sh && \
 #    rm -rf *
 
-RUN echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-RUN sudo apt-get update
-RUN sudo apt-get install sbt
+# This official method FAILS.  Reference: http://stackoverflow.com/questions/28543911/sbt-install-failure-with-aptitude-on-ubuntu-14-04
+#RUN echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+#RUN sudo apt-get update
+#RUN sudo apt-get install sbt
 
+RUN wget https://dl.bintray.com/sbt/debian/sbt-0.13.7.deb
+RUN sudo dpkg -i sbt-0.13.7.deb
 
 EXPOSE 9000
 EXPOSE 9999
